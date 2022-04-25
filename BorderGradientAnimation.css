@@ -1,0 +1,37 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    background-color: #202020;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Card{
+    height: 350px;
+    width: 350px;
+    padding: 5px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 10px solid;
+    border-image: linear-gradient(yellow,red,blue) 1;
+    animation: Rotate 2s ease-in infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.CardText{
+    color: white;
+    font-family: 'Roboto';
+    font-size: 20px;
+}
+
+@keyframes Rotate {
+    50%{
+        border-image: linear-gradient(360deg,yellow, red, blue) 1;
+    }
+}
